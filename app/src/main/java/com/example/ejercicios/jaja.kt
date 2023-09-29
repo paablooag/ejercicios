@@ -16,7 +16,9 @@ fun main(){
     //Ejercicio 4
     informacionPersonal(nombre,edad,ciudad="Graná")
     //Ejercicio5
-
+    println(fan(35))
+    println(celsius(35))
+    
 }
 //ejercicio 3
 fun saludar(nombre:String,edad:Int){
@@ -28,9 +30,13 @@ fun informacionPersonal(nombre: String, edad: Int, ciudad: String){
     println("Hola bebe, soy $nombre y tengo $edad años, ciudad $ciudad")
 }
 //Ejercicio 5
-fun fan(grados:Int){
-
+fun fan(grados:Int): Int{
+    var res=0;
+    res= (grados*9/5)+32;
+    return res;
 }
-fun celsius(grados:Int){
-
+fun celsius(grados:Int): Int{
+    var res=0;
+    res=(grados - 32)*5/9
+    return res;
 }
